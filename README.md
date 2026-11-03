@@ -12,8 +12,12 @@ Sus Fuss - Sus fuss is a special rule that checks your score after your turn. If
 
 
 # How to play 
-Make sure you have a python interpeter like vscode installed. In your python interpeter open up the folder containing your extracted files and in your terminal go to the folder hog and run the following commands based on how you would like to play.
-If you want to watch 2 computers play run python3 hog_ui.py
-if you want to play against a computer run python3 hog_ui.py -n 1
-if you want to play against a friend or someone else run python3 hog_ui.py -n 2
-Finally if you want to play the graphic interface run python3 hog_gui.py
+Windows: Open command prompt and navigate to the hog folder where you extracted the game and run the following commands based on how you want to play.
+Mac: Open terminal and go to the hog folder where you extracted the game and run the following commands based on how you want to play.
+Linux: Open terminal and go to the hog folder where you extracted the game and run the following commands based on how you want to play.
+
+# Commands
+If you want to watch 2 computers play run python3 hog_ui.py for mac and linux. Run py hog_ui.py for windows
+if you want to play against a computer run python3 hog_ui.py -n 1 for mac and linux. Run py hog_ui.py -n 1 for windows
+if you want to play against a friend or someone else run python3 hog_ui.py -n 2 for mac and linux. Run py hog_ui.py -n 2 for windows
+Finally if you want to play the graphic interface run python3 hog_gui.py for mac and linux. Run py hog_gui.py

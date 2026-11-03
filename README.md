@@ -1,2 +1,2 @@
 # Hog-game
-A 2 player game called hog 
+A single or 2 player dice game

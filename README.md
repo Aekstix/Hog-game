@@ -1,23 +1,53 @@
-# Hog-game
+# Hog Dice Game
 
-A single or 2 player dice game
+## Objective
+Be the first player to reach the target score.
 
+## How to Play
+Players take turns and choose how many dice to roll. If any rolled die shows a 1, the player earns only 1 point for that turn. Otherwise, the player earns the sum of the dice rolled.
 
-# Objective: 
-Be the first player to reach the target score
-Players switch turns and choose how many dice to roll
-If any rolled dice gives 1 the players only earns 1 point that turn
-. Rules: Boar brawl- if you choose to roll 0 dice then you earn points based on the tens digit of your opponent's score and the ones digit of your own score. The points you earn is based on the formula max(1,abs(2(opponents tens digit - your ones digit))) this formula chooses 1 if the amount of points you score by rolling zero dice is less than 1. 
-Sus Fuss - Sus fuss is a special rule that checks your score after your turn. If you score is a prime number then it stays the same, but if your score is not a prime number then it increases to the next prime number.
+## Special Rules
 
+**Boar Brawl:** If you choose to roll 0 dice, you earn points based on the tens digit of your opponent's score and the ones digit of your own score. The points earned are calculated using the formula:
 
-# How to play 
-Windows: Open command prompt and navigate to the hog folder where you extracted the game and run the following commands based on how you want to play.
-Mac: Open terminal and go to the hog folder where you extracted the game and run the following commands based on how you want to play.
-Linux: Open terminal and go to the hog folder where you extracted the game and run the following commands based on how you want to play.
+`max(1, abs(2 * (opponent's tens digit - your ones digit)))`
 
-# Commands
-If you want to watch 2 computers play run python3 hog_ui.py for mac and linux. Run py hog_ui.py for windows
-if you want to play against a computer run python3 hog_ui.py -n 1 for mac and linux. Run py hog_ui.py -n 1 for windows
-if you want to play against a friend or someone else run python3 hog_ui.py -n 2 for mac and linux. Run py hog_ui.py -n 2 for windows
-Finally if you want to play the graphic interface run python3 hog_gui.py for mac and linux. Run py hog_gui.py
+This formula ensures that you earn at least 1 point when rolling zero dice.
+
+**Sus Fuss:** Sus Fuss checks your score after your turn. If your score is a prime number, it stays the same. If your score is not prime, it increases to the next prime number.
+
+## How to Run the Game
+
+First, download and extract this repository. Then, open the appropriate terminal or command prompt and navigate to the folder where you extracted the Hog game.
+
+- **Windows:** Open Command Prompt.
+- **macOS:** Open Terminal.
+- **Linux:** Open Terminal.
+
+Once you are inside the Hog project folder, run one of the commands below depending on how you want to play.
+
+## Commands
+
+### Watch Two Computers Play
+
+- Windows: `py hog_ui.py`
+- macOS/Linux: `python3 hog_ui.py`
+
+### Play Against a Computer
+
+- Windows: `py hog_ui.py -n 1`
+- macOS/Linux: `python3 hog_ui.py -n 1`
+
+### Play Against a Friend
+
+- Windows: `py hog_ui.py -n 2`
+- macOS/Linux: `python3 hog_ui.py -n 2`
+
+### Play Using the Graphical Interface
+
+- Windows: `py hog_gui.py`
+- macOS/Linux: `python3 hog_gui.py`
+
+## Requirements
+
+- Python 3 installed on your computer.
